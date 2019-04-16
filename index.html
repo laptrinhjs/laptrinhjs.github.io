@@ -2,16 +2,16 @@
 <html>
 <head>
   <script>
-    function myFunction()
+    function ljsFunction()
     {
       var x = document.lastModified.split(" ")[0].split("/");
-      var y = x[1] + '/' + x[0] + '/' + x[2] + '/';
-      /*document.getElementById("demo").innerHTML = "Page last modified: " + y;*/
-      document.getElementById("demo").innerHTML = "Trang được cập nhật vào lúc: " + document.lastModified;
+      var y = x[1] + '/' + x[0] + '/' + x[2] + ' ';
+      var z = document.lastModified.split(" ")[1];
+      document.getElementById("ljsmod").innerHTML = "Trang đã được truy cập và chỉnh sửa vào lúc: " + y + z +'.';
     }
   </script>
 </head>
-<body onload="myFunction()">
+<body onload="ljsFunction()">
 <h1 style="text-align:center">Chào mừng các bạn đến với trang <a href="https://laptrinhjs.github.io">LaptrinhJS</a>.</h1>
 <div style="text-align: center">
   <a style="font-size: 16px; color: gray; text-decoration: none" href="https://www.facebook.com/L%E1%BA%ADp-Tr%C3%ACnh-JavaScript-419883598586981/" target="_blank">Page.</a>
@@ -20,7 +20,7 @@
 </div>
   <div style="text-align: right; font-size: 18px; font-family: Arial">
     <u>
-      <p id="demo"></p>
+      <p id="ljsmod"></p>
     </u>
   </div>
 </body>
